@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
+        <script>
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+            }
+        </script>
+
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta name="generator" content="Hugo 0.60.0" />
+
+    <title>搭建Hexo博客方法 | Kurby</title>
+
+    <link rel="stylesheet" href="/css/meme.min.83dae79e433bf0f3badcdc029f740506a6774e9478d80e8ea9e3103996cf7167.css" integrity="sha256-g9rnnkM78PO63NwCn3QFBqZ3TpR42A6OqeMQOZbPcWc=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Slab:600i|Open+Sans+Condensed:300|Open+Sans:600&display=swap" rel="stylesheet" />
+
+    <meta name="author" content="Kurby" />
+    
+    
+    <meta name="description" content="搭建Hexo博客方法 下载nodejs、下载git,全都下一步安装就好 node - v nmp -v 测试是……" />
+    <meta name="keywords" content="Love, Think, Share" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Kurby" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Kurby" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="https://Kurby96.github.io/read/hexo-new/" />
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2019-12-01T13:42:33+08:00",
+        "dateModified": "2019-12-03T21:43:03+08:00",
+        "url": "https://Kurby96.github.io/read/hexo-new/",
+        "headline": "搭建Hexo博客方法",
+        "description": "搭建Hexo博客方法 下载nodejs、下载git,全都下一步安装就好 node - v nmp -v 测试是……",
+        "keywords": "Love, Think, Share",
+        "inLanguage" : "zh-CN",
+        "articleSection": "read",
+        "wordCount":  532 ,
+        "image": ["https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123140121.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123155948.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123160252.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123161249.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162100.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162934.png","https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123163118.png"],
+        "author": {
+            "@type": "Person",
+            "description": "Think And Love",
+            "email": "1298869960@qq.com",
+            "image": "https://Kurby96.github.io/icons/apple-touch-icon.png",
+            "url": "https://Kurby96.github.io/",
+            "name": "Kurby"
+        },
+        "license": "在保留本文作者及本文链接的前提下，非商业用途随意转载分享。",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kurby",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://Kurby96.github.io/icons/apple-touch-icon.png"
+            },
+            "url": "https://Kurby96.github.io/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://Kurby96.github.io/"
+        }
+    }
+</script>
+
+    
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+
+
+<meta name="twitter:site" content="@Kurby" />
+<meta name="twitter:creator" content="@Kurby" />
+
+    
+
+
+
+
+
+
+<meta property="og:title" content="搭建Hexo博客方法" />
+<meta property="og:description" content="搭建Hexo博客方法 下载nodejs、下载git,全都下一步安装就好 node - v nmp -v 测试是……" />
+<meta property="og:url" content="https://Kurby96.github.io/read/hexo-new/" />
+<meta property="og:site_name" content="Kurby" />
+<meta property="og:locale" content="zh-CN" /><meta property="og:image" content="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123140121.png" />
+<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2019-12-01T13:42:33+08:00" />
+    <meta property="article:modified_time" content="2019-12-03T21:43:03+08:00" />
+    
+    <meta property="article:section" content="read" />
+    <meta property="article:tag" content="Love, Think, Share" />
+
+        
+
+
+
+
+    
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-153531768-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        <div class="site-brand">
+            
+            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="250" height="100"><text transform="translate(21 74)"><tspan x="0" y="0" style="white-space:pre" font-size="78" fill="#fff" font-family="Source Han Sans SC Regular" font-weight="400">Kurby</tspan></text></svg></a>
+            
+        </div>
+    </header>
+
+            
+            
+            
+    
+        
+            
+        
+        
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+    
+
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+        <article class="content post">
+
+            <h1 class="post-title">搭建Hexo博客方法</h1>
+
+            
+
+            
+                
+            
+
+            
+                <div class="post-meta">
+    
+        
+        <time datetime="2019-12-01T13:42:33+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2019.12.1</time>
+    
+    
+        
+        <time datetime="2019-12-03T21:43:03+08:00" class="post-meta-item modified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>2019.12.3</time>
+    
+    
+    
+        
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+            
+            
+            
+        
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>532</span>
+    
+    
+        
+        <span class="post-meta-item readingtime"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>2&nbsp;分钟</span>
+    
+</div>
+            
+
+            <div class="post-body"><h2 id="hexo"><a href="#hexo" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>搭建Hexo博客方法</h2>
+<p style="text-indent:0"><span class="drop-cap">下</span>载<a href="https://nodejs.org/en">nodejs</a>、下载<a href="https://git-scm.com">git</a>,全都下一步安装就好</p>
+<p><!-- raw HTML omitted --></p>
+<p>node - v  nmp -v 测试是否安装成功</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123140121.png" alt=""></p>
+<p><strong>错误情况</strong> ：如果运行 npm -v 无反应， 在C盘搜索.npmrc  然后删除，</p>
+<p>npm install -g cnpm &ndash;registry=https://registry.npm.taobao.org</p>
+<p>cnpm install -g hexo-cli</p>
+<p>hexo -v查看结果</p>
+<p>新建一个目录，在这个目录里面 ，进入git命令行，输入 hexo init</p>
+<p><!-- raw HTML omitted --></p>
+<p>安装完成</p>
+<p><!-- raw HTML omitted --></p>
+<p>启动博客:hexo s   在网页上运行http://localhost:4000 即可查看网页，注意这里一定要在运行的状态下，可能你复制这个网页的时候把hexo s运行的状态给关掉了。</p>
+<p><!-- raw HTML omitted --></p>
+<h4 id="heading"><a href="#heading" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>命令说明：</h4>
+<p>新建一篇文章： hexo new &ldquo;My New Post&rdquo;</p>
+<p>运行： hexo server</p>
+<p>生成静态文件：hexo generate</p>
+<p>运行远端：hexo deploy</p>
+<p>清理：hexo clean</p>
+<p>安装工具：npm install &ndash;save hexo-deployer-git</p>
+<p><!-- raw HTML omitted --></p>
+<p>到blog目录下，打开_config.yml</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123155948.png" alt=""></p>
+<p>按照下图更改</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123160252.png" alt=""></p>
+<p>部署到远端：hexo generate</p>
+<p><!-- raw HTML omitted --></p>
+<p>输入你的git email和名字，在输入用户名和密码</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123161249.png" alt=""></p>
+<p>运行远端：hexo deploy即可。</p>
+<p>推到远端之后就可以用你自己的github访问你的博客了。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162100.png" alt=""></p>
+<p>切换主题</p>
+<p>github.com/litten/hexo-theme-yilia</p>
+<p>把这个主题克隆到本地</p>
+<p>git clone <a href="http://github.com/litten/hexo-theme-yilia.git">http://github.com/litten/hexo-theme-yilia.git</a> themes/yilia （注意当前路径在blog下）</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162934.png" alt=""></p>
+<p>修改_config.yml 文件配置。名字改成yilia即可。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123163118.png" alt=""></p>
+<p>重新运行远端：hexo deploy就成功了。</p>
+<p>参考资料：</p>
+<p><a href="https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.0">https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.0</a></p>
+<p><a href="https://blog.csdn.net/m0_37438418/article/details/80355708">https://blog.csdn.net/m0_37438418/article/details/80355708</a></p>
+<p><a href="https://www.jianshu.com/p/1c888a6b8297?utm_source=oschina-app">https://www.jianshu.com/p/1c888a6b8297?utm_source=oschina-app</a></p>
+<p><a href="https://www.jianshu.com/p/390f202c5b0e">https://www.jianshu.com/p/390f202c5b0e</a></p>
+<p>整理文章、码字不易，希望这篇文章能给你帮助。</p>
+<p>打赏随意，如果您有闲钱，请支持一下我，请我喝杯咖啡，谢谢了。</p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --></p>
+</div>
+
+        </article>
+
+        
+
+        
+
+        
+
+        
+    
+
+
+        
+    
+    
+
+
+        
+    
+
+
+        
+
+        
+
+        
+
+        
+    
+
+        <div class="load-comments">
+            <div id="load-comments" onclick="loadComments()">加载评论</div>
+        </div>
+
+        
+
+        
+            <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+            <div id="vcomments"></div>
+        
+
+    
+
+
+    </div>
+</main>
+
+            
+    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            
+                
+            
+            
+
+            
+                
+            
+            
+
+            
+                
+            
+            
+
+            <div class="site-info">©&nbsp;2019–2019<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>Kurby</div>
+
+            
+
+            
+
+            
+                <div class="custom-footer">你知道今天的天空是什么颜色的吗？</div>
+            
+
+            
+        </div>
+    </footer>
+
+        </div>
+        <script src="/js/meme.min.be273f7eb89932146bc893fce7038195a4860d8c6b61bab732423bf2dcf29375.js" integrity="sha256-vic/friZMhRryJP85wOBlaSGDYxrYbq3MkI78tzyk3U=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
+
+
+    <script data-no-instant>
+        InstantClick.on('change', function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+                document.getElementById("theme-toggle").innerHTML = "🌙";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
+                }
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+                document.getElementById("theme-toggle").innerHTML = "🌞";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
+                }
+            }
+        });
+    </script>
+<script data-no-instant>
+            InstantClick.on('change', function () {
+                ga('send', 'pageview', location.pathname + location.search);
+            });
+        </script>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous" />
+<script>
+    if (typeof renderMathInElement === 'undefined') {
+        var getScript = (options) => {
+            var script = document.createElement('script');
+            script.defer = true;
+            script.crossOrigin = 'anonymous';
+            script['data-no-instant'] = true;
+            Object.keys(options).forEach((key) => {
+                script[key] = options[key];
+            });
+            document.body.appendChild(script);
+        };
+        getScript({
+            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js',
+            integrity: 'sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1',
+            onload: () => {
+                getScript({
+                    src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/mhchem.min.js',
+                    integrity: 'sha384-oa0lfxCGjaU1LdYckhq8LZcP+JTf8cyJXe69O6VE6UrShzWveT6KiCElJrck/stm',
+                    onload: () => {
+                        getScript({
+                            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js',
+                            integrity: 'sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI',
+                            onload: () => {
+                                renderMathInElement(
+                                    document.body,
+                                    {
+                                        delimiters: [
+                                            {left: "$$", right: "$$", display: true},
+                                            {left: "\\[", right: "\\]", display: true},
+                                            {left: "$", right: "$", display: false},
+                                            {left: "\\(", right: "\\)", display: false}
+                                        ]
+                                    }
+                                );
+                            },
+                        });
+                    },
+                });
+            },
+        });
+    } else {
+        renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+</script>
+
+
+
+    
+
+        
+
+        
+            <script>
+    function loadComments() {
+        document.querySelector('#load-comments').style = "display:none";
+        new Valine({
+            el: '#vcomments',
+            appId: 'Vra4Bndc3XN8nBG8mEmWuJ30-9Nh9j0Va',
+            appKey: 'l5RN0mUEyRj5SNpEImzhPJKl',
+            placeholder: '快来吐槽我吧！若有问题留下你的邮箱',
+            notify:  false ,
+            verify:  false ,
+            path: location.pathname,
+            avatar: 'mm',
+            meta: ["nick"],
+            pageSize:  10 ,
+            lang: 'zh-cn',
+            visitor:  false ,
+            highlight:  true ,
+            avatarForce:  false ,
+            recordIP:  false ,
+            serverURLs: ''
+        });
+    }
+</script>
+        
+
+    
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Kurby</title>
+        <link>https://Kurby96.github.io/</link>
+        <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
+        <generator>Hugo 0.60.0 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>1298869960@qq.com (Kurby)</managingEditor>
+        
+        
+            <webMaster>1298869960@qq.com (Kurby)</webMaster>
+        
+        
+            <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+        
+        <lastBuildDate>Tue, 03 Dec 2019 21:43:10 +0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
+        
+        
+            <item>
+                <title>搭建Hexo博客方法</title>
+                <link>https://Kurby96.github.io/read/hexo-new/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/read/hexo-new/</guid>
+                <pubDate>Sun, 01 Dec 2019 13:42:33 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h2 id="hexo">搭建Hexo博客方法</h2>
+<p>下载<a href="https://nodejs.org/en">nodejs</a>、下载<a href="https://git-scm.com">git</a>,全都下一步安装就好</p>
+<p><!-- raw HTML omitted --></p>
+<p>node - v  nmp -v 测试是否安装成功</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123140121.png" alt=""></p>
+<p><strong>错误情况</strong> ：如果运行 npm -v 无反应， 在C盘搜索.npmrc  然后删除，</p>
+<p>npm install -g cnpm &ndash;registry=https://registry.npm.taobao.org</p>
+<p>cnpm install -g hexo-cli</p>
+<p>hexo -v查看结果</p>
+<p>新建一个目录，在这个目录里面 ，进入git命令行，输入 hexo init</p>
+<p><!-- raw HTML omitted --></p>
+<p>安装完成</p>
+<p><!-- raw HTML omitted --></p>
+<p>启动博客:hexo s   在网页上运行http://localhost:4000 即可查看网页，注意这里一定要在运行的状态下，可能你复制这个网页的时候把hexo s运行的状态给关掉了。</p>
+<p><!-- raw HTML omitted --></p>
+<h4 id="heading">命令说明：</h4>
+<p>新建一篇文章： hexo new &ldquo;My New Post&rdquo;</p>
+<p>运行： hexo server</p>
+<p>生成静态文件：hexo generate</p>
+<p>运行远端：hexo deploy</p>
+<p>清理：hexo clean</p>
+<p>安装工具：npm install &ndash;save hexo-deployer-git</p>
+<p><!-- raw HTML omitted --></p>
+<p>到blog目录下，打开_config.yml</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123155948.png" alt=""></p>
+<p>按照下图更改</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123160252.png" alt=""></p>
+<p>部署到远端：hexo generate</p>
+<p><!-- raw HTML omitted --></p>
+<p>输入你的git email和名字，在输入用户名和密码</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123161249.png" alt=""></p>
+<p>运行远端：hexo deploy即可。</p>
+<p>推到远端之后就可以用你自己的github访问你的博客了。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162100.png" alt=""></p>
+<p>切换主题</p>
+<p>github.com/litten/hexo-theme-yilia</p>
+<p>把这个主题克隆到本地</p>
+<p>git clone <a href="http://github.com/litten/hexo-theme-yilia.git">http://github.com/litten/hexo-theme-yilia.git</a> themes/yilia （注意当前路径在blog下）</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123162934.png" alt=""></p>
+<p>修改_config.yml 文件配置。名字改成yilia即可。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/myPicGoStore/master/img/20191123163118.png" alt=""></p>
+<p>重新运行远端：hexo deploy就成功了。</p>
+<p>参考资料：</p>
+<p><a href="https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.0">https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.0</a></p>
+<p><a href="https://blog.csdn.net/m0_37438418/article/details/80355708">https://blog.csdn.net/m0_37438418/article/details/80355708</a></p>
+<p><a href="https://www.jianshu.com/p/1c888a6b8297?utm_source=oschina-app">https://www.jianshu.com/p/1c888a6b8297?utm_source=oschina-app</a></p>
+<p><a href="https://www.jianshu.com/p/390f202c5b0e">https://www.jianshu.com/p/390f202c5b0e</a></p>
+<p>整理文章、码字不易，希望这篇文章能给你帮助。</p>
+<p>打赏随意，如果您有闲钱，请支持一下我，请我喝杯咖啡，谢谢了。</p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --></p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Reuixiy的Hugo主题更改</title>
+                <link>https://Kurby96.github.io/read/theme-reuixiy/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/read/theme-reuixiy/</guid>
+                <pubDate>Sat, 30 Nov 2019 22:34:33 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<p>本篇博客只对reuixiy大神MeMe主题的更改，只作为个人记录，如果想要了解，请参考<a href="https://www.gohugo.org/">Hugo的中文文档</a>、<a href="https://themes.gohugo.io/">Hugo的英文文档</a>、<a href="https://io-oi.me/tech/documentation-of-hugo-theme-meme/">reuixiy大神自己的说明</a>、以及博客根目录的__config.toml的注释理解。</p>
+<h2 id="heading">命令解释</h2>
+<p>hugo server -D &ndash;renderToDisk &ndash;environment production     生成模式测试</p>
+<p>hugo server -D  不是生产模式的本地测试</p>
+<p>hugo &ndash;theme=meme    编译主题，编译好点的在public文件中</p>
+<h2 id="logo">头像logo修改</h2>
+<p>1、用ps，根据图片的大小设置好图像，生成svg模式，请参考下面博文，这里简单说明了。</p>
+<p>参考： <a href="https://www.cnblogs.com/dongxiaolei/p/7344662.html"><a href="https://www.cnblogs.com/dongxiaolei/p/7344662.html">https://www.cnblogs.com/dongxiaolei/p/7344662.html</a></a></p>
+<p>2、安装svg压缩工具svgo安装，需要提前安装node.js，git bash命令行打卡，输入 npm install -g svgo 安装。</p>
+<p>3、 svgo 1.svg 2.svg 执行完之后，用记事本或者vs等等编译器打开1.svg，就是咱们需要的内容。</p>
+<p>把1.svg的内容复制到~blog\themes\meme\data\SVG.toml文件中里，找的你要修改的内容，替换或者添加即可。</p>
+<p><img src="https://i.loli.net/2019/11/30/4oE1OJrnKzLCcXk.png" alt="image.png"></p>
+<h2 id="heading1">新发现的功能</h2>
+<p><img src="https://i.loli.net/2019/11/30/kzhpR7lVrej9YJx.png" alt="$F$YUBD)ET6FAZRJ$_CO2EI.png"></p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/Hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>git 提交100M以上的文件,附github基本操作流程</title>
+                <link>https://Kurby96.github.io/tool/my-git/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/my-git/</guid>
+                <pubDate>Sat, 30 Nov 2019 22:25:56 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h2 id="heading">操作流程</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">remote: Resolving deltas: 100% <span class="o">(</span>472/472<span class="o">)</span>, <span class="k">done</span>.
+remote: error: GH001: Large files detected.
+You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: File XXX/XXX/XXX is <span class="m">234</span> MB<span class="p">;</span> this exceeds GitHub‘s file size limit of 100.00 MB 
+</code></pre></td></tr></table>
+</div>
+</div><p>解决方法：</p>
+<p>1、安装git -lfs到本机， <a href="https://link.jianshu.com/?t=https%3A%2F%2Fgit-lfs.github.com"><a href="https://git-lfs.github.com">https://git-lfs.github.com</a></a></p>
+<p>2、执行：git lfs install</p>
+<p>3、选择您希望Git LFS管理的文件类型（或直接编辑.gitattributes）。您可以随时配置其他文件扩展名。这一步成功后会生成一个gitattributes文件</p>
+<blockquote>
+<p>git lfs track  “* .a”        注释：&ndash;这里的 “ *.a &ldquo;就是你要上传的大文件的路径，可以是.xx文件</p>
+</blockquote>
+<p>4、把 .gitattributes 文件添加到本地仓库里</p>
+<p>git commit -m &ldquo;你要添加的备注信息&rdquo;</p>
+<p><!-- raw HTML omitted --> 注释：<!-- raw HTML omitted --> 如果往下面操作可能要重新再来一遍，所以先备份一个，以后有问题可以恢复到此处</p>
+<p>5、</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git add .   
+
+git commit -m <span class="s2">&#34;提交大文件&#34;</span>
+
+git push origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>如果上传不上去，那么执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git config lfs.git@github.com:Kurby96/kurby.top.mark.git <span class="nb">false</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="git">附件：git的常用操作流程</h2>
+<h3 id="1git">1、设置git用户名</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git config --global user.name <span class="s2">&#34;humingx&#34;</span>    
+$ git config --global user.email <span class="s2">&#34;humingx@yeah.net&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="2githubssh">2、生成密钥，添加到github的ssh上</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ ssh-keygen -t rsa -C <span class="s2">&#34;youremail@youremail&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3">3、测试密钥</h3>
+<pre><code>$ ssh -T git@github.com
+</code></pre><p>你将会看到：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">The authenticity of host <span class="s1">&#39;github.com (207.97.227.239)&#39;</span> can<span class="err">&#39;</span>t be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to <span class="k">continue</span> connecting <span class="o">(</span>yes/no<span class="o">)</span>?
+</code></pre></td></tr></table>
+</div>
+</div><p>选择 <code>yes</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">Hi humingx! You<span class="err">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre></td></tr></table>
+</div>
+</div><p>如果看到<code>Hi</code>后面是你的用户名，就说明成功了</p>
+<h3 id="4git-add--git-commit-m-">4、git add . 和git commit -m &ldquo;添加上备注信息&rdquo;</h3>
+<h3 id="5git-remote-add-origin-github">5、git remote add origin &ldquo;你仓库的github的链接&rdquo;</h3>
+<h3 id="6git-push-origin-master">6、git push origin master</h3>
+<hr>
+<p>参考文档：</p>
+<p><a href="https://www.jianshu.com/p/7d8003ba2324"><a href="https://www.jianshu.com/p/7d8003ba2324">https://www.jianshu.com/p/7d8003ba2324</a></a></p>
+<p><a href="https://blog.csdn.net/logan_lg/article/details/81502260"><a href="https://blog.csdn.net/logan_lg/article/details/81502260">https://blog.csdn.net/logan_lg/article/details/81502260</a></a></p>
+<p><a href="https://blog.csdn.net/wangwangwanglichao/article/details/79983262"><a href="https://blog.csdn.net/wangwangwanglichao/article/details/79983262">https://blog.csdn.net/wangwangwanglichao/article/details/79983262</a></a></p>
+<p><a href="https://blog.csdn.net/zhu1500527791/article/details/53119579"><a href="https://blog.csdn.net/zhu1500527791/article/details/53119579">https://blog.csdn.net/zhu1500527791/article/details/53119579</a></a></p>
+<p><a href="https://segmentfault.com/a/1190000002645623"><a href="https://segmentfault.com/a/1190000002645623/">https://segmentfault.com/a/1190000002645623/</a></a></p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/git%E5%B7%A5%E5%85%B7/">git工具</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Hugo安装</title>
+                <link>https://Kurby96.github.io/tool/hugo/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/hugo/</guid>
+                <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h2 id="hugo">Hugo安装</h2>
+<p><a href="https://github.com/gohugoio/hugo/releases">下载地址</a> ，注意需要下载extended版本的(windows10)</p>
+<p>还需要下载 <a href="https://www.mercurial-scm.org/downloads">mercural</a>  <a href="https://golang.org/dl/">go</a></p>
+<p>新建E：/Hugo/bin目录，将下载的hugo放到bin目录下</p>
+<p>添加E：/Hugo/bin目录到环境变量Path中。效果如下图，如何打开环境变量，不会的自行百度吧。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191128101133.png" alt=""></p>
+<p>上面可能遇到的问题：</p>
+<p>运行 hugo效果不对，尝试着以管理员的方式运行powershell，方法自行百度。</p>
+<h2 id="heading">创建一个网站</h2>
+<p>到E:/Hugo/hugo/ 目录下，运行hugo new site blog</p>
+<h3 id="heading1">下载主题</h3>
+<pre><code>~ $ cd blog
+~/blog $ git init
+~/blog $ git submodule add https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+</code></pre><h3 id="heading2">需要更新运行</h3>
+<pre><code>~/blog $ git submodule update --rebase --remote
+</code></pre><h3 id="heading3">初步配置</h3>
+<p>把<code>E:\Hugo\blog\themes\meme\config-examples\zh-cn</code>下的config.toml复制到<code>E:\Hugo\blog\</code>下替换掉</p>
+<h3 id="-hugo-server">运行网站 hugo server</h3>
+<p>1、创建一个新帖子和“关于”页面：</p>
+<pre><code>〜 / blog $ hugo new “ posts / hello-world.md ”
+〜 / blog $ hugo new “ about / _index.md ”
+</code></pre><p>2、运行</p>
+<pre><code>〜 / blog $hugo server-D
+</code></pre><p>遇到问题：</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191128121358.png" alt=""></p>
+<p>解决方法：</p>
+<p>提示说当前的hugo版本不行，去<a href="https://gohugo.io/troubleshooting/faq/">hugo官方手册查</a>,要下载extended的版本，所以重新下载把它放到/blog/bin目录下，重新运行hugo server即可</p>
+<p>在网页上输入  http://localhost:1313/  即可访问你的网页，</p>
+<h2 id="heading4">主题：</h2>
+<p>给大家推荐一个极简的主题，<a href="https://io-oi.me/">io-io.me</a>，据说是小姑娘哦，真实乍看叹为观止，本人的博客就是用的这个主题。推荐给大家~</p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/Hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>picGo工具使用说明</title>
+                <link>https://Kurby96.github.io/tool/picgo-tool/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/picgo-tool/</guid>
+                <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h4 id="picgo">picGo工具使用说明</h4>
+<p>先说一下背景吧，本人写makedown喜欢在本地写，使用的是typora，<a href="https://www.typora.io/">下载地址</a>,有时候截图直接粘贴到typora上了，typora用的是本地的路径，当传到csdn或者其他上面，图片的链接就不见了，很是捉鸡，所以上网上查查有没有解决方案。遇到了picGo，很是欣喜。这里说一下使用方法吧。</p>
+<p>教程链接： <a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A"><a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A</a></a></p>
+<p>教程看着蛮复杂的，我这里简化一下。</p>
+<h5 id="1">1、下载应用</h5>
+<p>应用下载地址： <a href="https://github.com/Molunerfinn/PicGo/releases"><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></a></p>
+<p>macOS用户请下载最新版本的<code>dmg</code>文件，windows用户请下载最新版本的<code>exe</code>文件，linux用户请下载<code>AppImage</code>文件 。</p>
+<p>下好之后，直接安装就行。</p>
+<h5 id="2">2、配置环境变量</h5>
+<p>前提: 先安装node.js，版本要大于8,然后配置环境。</p>
+<p>先找到环境变量，不知道在哪的百度搜windows环境变量怎么找，点击环境变量，点击Path，点击编辑。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161238.png" alt=""></p>
+<p>然后新建，把 %APPDATA%\picgo\data.json 粘贴到上面。重启使环境变量生效。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161449.png" alt=""></p>
+<h5 id="3">3、一些基本操作</h5>
+<p>这些操作就看上面的文档，包括上传啊，相册啊，什么的。</p>
+<h5 id="4--github">4、图床设置  (github方式)</h5>
+<p>1、一个仓库，记录一下仓库地址。</p>
+<p>2、 生成一个token用于PicGo操作你的仓库：</p>
+<p>访问：https://github.com/settings/tokens</p>
+<p>然后点击<code>Generate new token</code>。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162506.png" alt=""></p>
+<p>把repo的勾打上即可。然后翻到页面最底部，点击<code>Generate token</code>的绿色按钮生成token。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162609.png" alt=""></p>
+<p>**注意：**这个token生成后只会显示一次！你要把这个token复制一下存到其他地方以备以后要用。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162900.png" alt=""></p>
+<p>3、 配置PicGo</p>
+<p>**注意：**仓库名的格式是<code>用户名/仓库</code>，比如我创建了一个叫做<code>test</code>的仓库，在PicGo里我要设定的仓库名就是<code>Molunerfinn/test</code>。一般我们选择<code>master</code>分支即可。然后记得点击确定以生效，然后可以点击<code>设为默认图床</code>来确保上传的图床是GitHub。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120163040.png" alt=""></p>
+<p>设定自定义域名，这个是你上传图片到Github上，picGo会给你一个链接，已经复制到剪切板上了，这个就是配置剪切板上路径的。</p>
+<p>这个路径的前缀你可以打开github上的图片，右键-  <code>在新标签页中打开图片(i)</code>,查看前面的路径</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120170621.png" alt=""></p>
+<p>得到的路径就是： <a href="https://raw.githubusercontent.com/BUG-96/PicStore/master">https://raw.githubusercontent.com/BUG-96/PicStore/master</a> 把这个填到设置自定义域名中即可。</p>
+<h5 id="5">5、下面就是一些自己的配置，参考文档就行了。</h5>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/tools/">tools</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>廖雪峰‘s Git</title>
+                <link>https://Kurby96.github.io/tool/git%E5%B7%A5%E5%85%B7/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/git%E5%B7%A5%E5%85%B7/</guid>
+                <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h1 id="s-git">廖雪峰‘s Git</h1>
+<p>[TOC]</p>
+<p>本人以后的博客转移到个人小站： <a href="https://www.kurby.top/"><a href="https://www.kurby.top/">https://www.kurby.top/</a></a>  本小站作为个人的生活、编程、胡思乱想等记录站点，欢迎大家来访问。</p>
+<h2 id="git">Git的诞生</h2>
+<p>先是因为CVS、SVN都是付费的，不符合开源精神，后来 BitKeeper 的东家BitMover公司出于人道主义精神，授权Linux社区免费使用这个版本控制系统。 后来有个Linux的牛人把BitMove给破解了，所以LinuX无法免费使用了，Linus大佬用了两周时间用C写出了一个分布式的版本控制系统Git，此乃神人也~</p>
+<h2 id="git1">Git的安装</h2>
+<p><a href="https://git-scm.com/download/">Git下载</a>，可以自己根据自己的操作系统选择，我为了方便用的是windows的，</p>
+<p>安装完成后，运行git bash ，弹出一个命令行的东西，说明安装成功了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">git</span> <span class="nx">config</span> <span class="o">--</span><span class="nx">global</span> <span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="s">&#34;Your Name&#34;</span>
+<span class="err">$</span> <span class="nx">git</span> <span class="nx">config</span> <span class="o">--</span><span class="nx">global</span> <span class="nx">user</span><span class="p">.</span><span class="nx">email</span> <span class="s">&#34;email@example.com&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>创建版本库</p>
+<p>创建一个文件夹、git init 把当前目录设置成Git可以管理的仓库：</p>
+<pre><code>$ mkdir learngit
+$ cd learngit
+$ git init
+</code></pre><p>如果你没有看到<code>.git</code>目录，那是因为这个目录默认是隐藏的，用<code>ls -ah</code>命令就可以看见。</p>
+<h2 id="git2">上传文件放到Git仓库</h2>
+<h3 id="git-add--git-commit">git add &amp;&amp; git commit</h3>
+<p>第 一步，用命令<code>git add</code>告诉Git，把文件添加到仓库：</p>
+<pre><code>$ git add readme.txt
+</code></pre><p>第二步，用命令<code>git commit</code>告诉Git，把文件提交到仓库：</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191127160301.png" alt=""></p>
+<p>简单解释一下<code>git commit</code>命令，<code>-m</code>后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。</p>
+<p>为什么Git添加文件需要<code>add</code>，<code>commit</code>一共两步呢？因为<code>commit</code>可以一次提交很多文件，所以你可以多次<code>add</code>不同的文件，比如：</p>
+<pre><code>$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m &quot;add 3 files.&quot;
+</code></pre><p>我们已经成功地添加并提交了一个readme.txt文件，现在，是时候继续工作了，于是，我们继续修改readme.txt文件，改成如下内容：</p>
+<pre><code>Git is a distributed version control system.
+Git is free software.
+</code></pre><h3 id="git-status">git status</h3>
+<p>现在，运行<code>git status</code>命令看看结果：</p>
+<pre><code>$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	modified:   readme.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre><p><code>git status</code>命令可以让我们时刻掌握仓库当前的状态，上面的命令输出告诉我们，<code>readme.txt</code>被修改过了，但还没有准备提交的修改。</p>
+<h3 id="git-diff">git diff</h3>
+<p>虽然Git告诉我们<code>readme.txt</code>被修改了，但如果能看看具体修改了什么内容，自然是很好的。比如你休假两周从国外回来，第一天上班时，已经记不清上次怎么修改的<code>readme.txt</code>，所以，需要用<code>git diff</code>这个命令看看：</p>
+<pre><code>$ git diff readme.txt 
+diff --git a/readme.txt b/readme.txt
+index 46d49bf..9247db6 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,2 @@
+-Git is a version control system.
++Git is a distributed version control system.
+ Git is free software.
+</code></pre><p><code>git diff</code>顾名思义就是查看difference，显示的格式正是Unix通用的diff格式，可以从上面的命令输出看到，我们在第一行添加了一个<code>distributed</code>单词。</p>
+<p>知道了对<code>readme.txt</code>作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是<code>git add</code>：</p>
+<pre><code>$ git add readme.txt
+</code></pre><p>同样没有任何输出。在执行第二步<code>git commit</code>之前，我们再运行<code>git status</code>看看当前仓库的状态：</p>
+<pre><code>$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+	modified:   readme.txt
+</code></pre><p><code>git status</code>告诉我们，将要被提交的修改包括<code>readme.txt</code>，下一步，就可以放心地提交了：</p>
+<pre><code>$ git commit -m &quot;add distributed&quot;
+[master e475afc] add distributed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</code></pre><p>提交后，我们再用<code>git status</code>命令看看仓库的当前状态：</p>
+<pre><code>$ git status
+On branch master
+nothing to commit, working tree clean
+</code></pre><h3 id="git-log">git log</h3>
+<p>查看版本控制的记录</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191127162528.png" alt=""></p>
+<p>git log &ndash;pretty=oneline  就查看一行有那些版本</p>
+<p>上图中的(HEAD -&gt;master)表示的就是当前使用的版本</p>
+<p>首先，Git必须知道当前版本是哪个版本，在Git中，用<code>HEAD</code>表示当前版本，也就是最新的提交<code>1094adb...</code>（注意我的提交ID和你的肯定不一样），上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个<code>^</code>比较容易数不过来，所以写成<code>HEAD~100</code>。</p>
+<p>想要回到add something 要用</p>
+<p>git reset &ndash;hard HEAD^ 表示要回到上一个版本</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191127163042.png" alt=""></p>
+<p>图中可以看到版本变成了 add something 的版本了</p>
+<p>但是要注意的是咱们执行git log 只有2个版本了，add lpl的版本不见了！咋办很慌啊？</p>
+<h3 id="git-reflog">git reflog</h3>
+<p>可以记录咱们的git reset 的所有操作  ，我们只有git reset &ndash;hard xxx 就行了。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191127163717.png" alt=""></p>
+<h3 id="git-checkout-">git checkout &ndash;</h3>
+<p>撤销更改的文件。<!-- raw HTML omitted --> 注意：<!-- raw HTML omitted --> 这里和git checkout 不一样 有 &ndash;</p>
+<p>可以撤销已经git add file和git checkout &ndash; file的文件回到之前的状态</p>
+<p><!-- raw HTML omitted --> 注意：<!-- raw HTML omitted --> 还可以用 git reset HEAD readme.txt 功能和git checkout &ndash; 一样的。</p>
+<h3 id="git-rm-xxx">git rm xxx</h3>
+<p>添加了一个文件到版本库之后，如果这个文件删除了，那么git status的时候就会显示这个文件已经删除了，如果不要这个文件了，可以 git rm xxx 从本地版本库中删除xxx文件。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191127173142.png" alt=""></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600/900002180232448">https://www.liaoxuefeng.com/wiki/896043488029600/900002180232448</a>  学到</p>
+<h2 id="heading">远程仓库</h2>
+<h3 id="heading1">添加远程仓库</h3>
+<p>自己在github上创建一个仓库</p>
+<p>现在，我们根据GitHub的提示，在本地的<code>learngit</code>仓库下运行命令：</p>
+<pre><code>$ git remote add origin michaelliao/learngit.git
+</code></pre><p>请千万注意，把上面的<code>michaelliao</code>替换成你自己的GitHub账户名，否则，你在本地关联的就是我的远程库，关联没有问题，但是你以后推送是推不上去的，因为你的SSH Key公钥不在我的账户列表中。</p>
+<p>添加后，远程库的名字就是<code>origin</code>，这是Git默认的叫法，也可以改成别的，但是<code>origin</code>这个名字一看就知道是远程库。</p>
+<p>下一步，就可以把本地库的所有内容推送到远程库上：</p>
+<pre><code>$ git push -u origin master
+</code></pre><p><strong><!-- raw HTML omitted -->问题<!-- raw HTML omitted --></strong>：</p>
+<p>1、git有时候会报这样的问题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">ERROR: Repository not found.fatal: Could not read from remote repository. Please make sure you have the correct access rightsand the repository exists.
+</code></pre></td></tr></table>
+</div>
+</div><p>解决方案是</p>
+<p>git remote set-url命令修改remote URL</p>
+<p>git remote set-url传递两个参数</p>
+<ul>
+<li>remote name。例如，origin或者upstream</li>
+<li>new remote url。例如，git@github.com:USERNAME/OTHERREPOSITORY.git</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">git remote set-url origin git@github.com:xxxxxx/xxxxxx.git
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="heading2">查看是否成功</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">$ git remote -v origin    
+https:YourUserName/YatouTest00123.git (fetch)origin    https:YourUserName/YatouTest00123.git (push)
+</code></pre></td></tr></table>
+</div>
+</div><p>2、 可能是本地命令行 ping github.com ping不同 ，是DNS的问题，可以从别人的电脑复制一个过来</p>
+<p><a href="https://blog.csdn.net/jackli_git/article/details/72861546">https://blog.csdn.net/jackli_git/article/details/72861546</a></p>
+<h4 id="origin">另外：重新定义origin的路径</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git remote set-url origin git@github.com:Kurby96/test.git
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="heading3">从远程仓库克隆到本地</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git clone git@github.com:michaelliao/gitskills.git
+</code></pre></td></tr></table>
+</div>
+</div><p>注意把Git库的地址换成你自己的，然后进入<code>gitskills</code>目录看看，已经有<code>README.md</code>文件了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> gitskills
+$ ls
+README.md
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="heading4">分支管理</h3>
+<h4 id="git-checkout-b-xxx--git-switch-c-xxx">git checkout -b xxx 或 git switch -c xxx</h4>
+<p>创建新的分支，然后切换到新分支</p>
+<pre><code>$ git checkout -b dev
+Switched to a new branch 'dev'
+</code></pre><p><code>git checkout</code>命令加上<code>-b</code>参数表示创建并切换，相当于以下两条命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git branch dev
+$ git checkout dev
+Switched to branch <span class="s1">&#39;dev&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git-branch-xxx">git branch xxx</h4>
+<p>创建xxx分支</p>
+<h4 id="git-branch-d-xxx">git branch -d XXX</h4>
+<p>删除xxx分支</p>
+<h4 id="git-branch">git branch</h4>
+<p>这个后面没有参数的就是查看当前所有的分支有什么， <code>git branch</code>命令会列出所有分支，当前分支前面会标一个<code>*</code>号。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/hh/master/img/20191129120311.png" alt=""></p>
+<p>git branch -d和git branch -D xxx</p>
+<h4 id="git-checkout-xxx--git-switch-xxx">git checkout xxx 或 git switch xxx</h4>
+<p>切换到xxx分支</p>
+<h4 id="git-merge">git merge</h4>
+<p>合并分支，这种是快进模式合并，速度快，并不是每次都能快速合并。</p>
+<p>eg：先切换到master分支(也可以是其他分支)去，然后合并你想要合并的分支。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git checkout master
+$ git merge dev  
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git-log-graph">git log &ndash;graph</h4>
+<p>命令可以看到分支合并图。</p>
+<h4 id="git-merge-noff-xxx">git merge &ndash;no-ff xxx</h4>
+<p>不用<code>Fast forward</code>模式进行合并分支。</p>
+<p><!-- raw HTML omitted --></p>
+<p>上图的这种合并，就是<code>--no-ff</code>这种合并方式，一个项目从黑色字的master分支，迭代了2个版本到黑色head处，现在想要把黑色的head合并到master,而且还有保存黑字master的版本，就要用<code>--no-ff</code>这种合并方式。</p>
+<h4 id="git-stash">git stash</h4>
+<p>我们更改了数据之后，如果想切换到另一个分支，就需要git add xx，然后git commit -m &ldquo;xxxx&rdquo;,先存一下，才能切换。</p>
+<p>如果我们不想这么操作，可以用git stash，它会存到一个stash链表里，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git stash list    	 ----查看当前存储的东西
+
+$ git stash apply  	---恢复stash内容不删除
+
+$ git stash drop  	----删除
+
+$ git stash pop    	-----恢复的同时，内容也清除
+
+$ git stash apply stash@<span class="o">{</span>0<span class="o">}</span>    -----恢复指定的stash 括号内是list的顺序
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git-remote">git remote</h4>
+<p>查看远程分支的名称</p>
+<p>git remote -v  &mdash;&mdash;&mdash;查看远程仓库的信息</p>
+<h4 id="git-pull">git pull</h4>
+<p>如果其他人在git push origin xxx ，而且此时你也在git push origin xxx，就会出错，因为远程的内容比你的新，这时你就可以用，git pull把最新的提交从origin/dev抓下来，然后本地合并，解决问题，再推送。</p>
+<p><code>git pull</code>也失败了，原因是没有指定本地<code>dev</code>分支与远程<code>origin/dev</code>分支的链接，根据提示，设置<code>dev</code>和<code>origin/dev</code>的链接：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git branch --set-upstream-to<span class="o">=</span>origin/dev dev
+</code></pre></td></tr></table>
+</div>
+</div><p>再git pull，如果合并之后，可能会有问题，手动解决，然后再push。</p>
+<h4 id="git-checkout--b--branchname--originbranchname">git checkout 	-b 	branchName 	origin/branchName</h4>
+<p>在本地创建与远程一样的分支，</p>
+<p>git checkout 	-b    branchName则是在本地当前分支基础上创建分支。</p>
+<h4 id="git-log-graph-prettyoneline-abbrevcommit">git log &ndash;graph &ndash;pretty=oneline &ndash;abbrev-commit</h4>
+<p>查看分支结构。</p>
+<h4 id="git-rebase">git rebase</h4>
+<p>重新使git log &ndash;graph &ndash;pretty=oneline &ndash;abbrev-commit得到的分支变成一条直线。</p>
+<h4 id="git-tag-name">git tag name</h4>
+<p>创建一个标签</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git tag &lt;name&gt; &lt;commit id&gt; 		 -----打标签
+
+git tag -a  -m <span class="s2">&#34;blablabla...&#34;</span>    -----可以指定标签信息
+git tag                          ----查看标签信息
+git tag -d v0.1                  ----删除标签
+git push origin &lt;tagname&gt;        -----推送标签到远程
+git push origin --tags           ------推送本地所有标签到远程
+如果标签已经推送到远程，要删除，需要从本地和远程分别删除
+git tag -d v0.1					  --本地删除
+git push origin :refs/tags/v0.1   --远程删除
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="gitignore">.gitignore</h4>
+<p>忽略git的文件</p>
+<p>如果文件被忽略了，可以使用git add -f xxx ,强制添加到git</p>
+<p>git check-ignore -v xxx    		 &mdash;&ndash;查看忽略的文件的规则</p>
+<h3 id="heading5">设置别名</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git config --global alias.st status            ----其中st 是status的别名
+</code></pre></td></tr></table>
+</div>
+</div><p>本博客参考廖雪峰git教程：<a href="https://www.liaoxuefeng.com/">廖老师网站官网</a>，非常感谢廖老师的分享。</p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/tools/">tools</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
