@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kurby</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-10-23T21:57:55+08:00</updated>
+    <updated>2020-10-24T11:54:05+08:00</updated>
     <id>https://Kurby96.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Kurby96.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://Kurby96.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">搭建Hexo博客方法</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/read/hexo-new/" />
             <id>https://Kurby96.github.io/read/hexo-new/</id>
-            <updated>2019-12-01T17:09:01+08:00</updated>
+            <updated>2020-10-23T22:05:17+08:00</updated>
             <published>2019-12-01T13:42:33+08:00</published>
             <author>
                     <name>Kurby</name>
@@ -183,6 +183,63 @@
             
             
                 
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Reuixiy的Hugo主题更改</title>
+            <link rel="alternate" type="text/html" href="https://Kurby96.github.io/life/theme-reuixiy/" />
+            <id>https://Kurby96.github.io/life/theme-reuixiy/</id>
+            <updated>2019-12-01T17:08:52+08:00</updated>
+            <published>2019-11-30T22:34:33+08:00</published>
+            <author>
+                    <name>Kurby</name>
+                    <uri>https://Kurby96.github.io/</uri>
+                    <email>1298869960@qq.com</email>
+                    </author>
+            <rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</rights>
+    
+    <summary type="html"><![CDATA[本篇博客只对reuixiy大神MeMe主题的更改，只作为个人记录，如果想要了解，请参……]]></summary>
+            
+                <content type="html"><![CDATA[<p>本篇博客只对reuixiy大神MeMe主题的更改，只作为个人记录，如果想要了解，请参考<a href="https://www.gohugo.org/">Hugo的中文文档</a>、<a href="https://themes.gohugo.io/">Hugo的英文文档</a>、<a href="https://io-oi.me/tech/documentation-of-hugo-theme-meme/">reuixiy大神自己的说明</a>、以及博客根目录的__config.toml的注释理解。</p>
+<h2 id="heading">命令解释</h2>
+<p>hugo server -D &ndash;renderToDisk &ndash;environment production     生成模式测试</p>
+<p>hugo server -D  不是生产模式的本地测试</p>
+<p>hugo &ndash;theme=meme    编译主题，编译好点的在public文件中</p>
+<h2 id="logo">头像logo修改</h2>
+<p>1、用ps，根据图片的大小设置好图像，生成svg模式，请参考下面博文，这里简单说明了。</p>
+<p>参考： <a href="https://www.cnblogs.com/dongxiaolei/p/7344662.html"><a href="https://www.cnblogs.com/dongxiaolei/p/7344662.html">https://www.cnblogs.com/dongxiaolei/p/7344662.html</a></a></p>
+<p>2、安装svg压缩工具svgo安装，需要提前安装node.js，git bash命令行打卡，输入 npm install -g svgo 安装。</p>
+<p>3、 svgo 1.svg 2.svg 执行完之后，用记事本或者vs等等编译器打开1.svg，就是咱们需要的内容。</p>
+<p>把1.svg的内容复制到~blog\themes\meme\data\SVG.toml文件中里，找的你要修改的内容，替换或者添加即可。</p>
+<p><img src="https://i.loli.net/2019/11/30/4oE1OJrnKzLCcXk.png" alt="image.png"></p>
+<h2 id="heading1">新发现的功能</h2>
+<p><img src="https://i.loli.net/2019/11/30/kzhpR7lVrej9YJx.png" alt="$F$YUBD)ET6FAZRJ$_CO2EI.png"></p>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://Kurby96.github.io/tags/Hugo/" term="Hugo" label="Hugo" />
+                            
+                        
                     
                 
             
@@ -910,7 +967,7 @@ git push origin :refs/tags/v0.1   --远程删除
             <title type="text">工具大全测试</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/tool/%E5%B7%A5%E5%85%B7%E5%A4%A7%E5%85%A8%E6%B5%8B%E8%AF%95/" />
             <id>https://Kurby96.github.io/tool/%E5%B7%A5%E5%85%B7%E5%A4%A7%E5%85%A8%E6%B5%8B%E8%AF%95/</id>
-            <updated>2020-10-23T18:01:13+08:00</updated>
+            <updated>2020-10-23T22:05:17+08:00</updated>
             <published>0001-01-01T00:00:00+00:00</published>
             <author>
                     <name>Kurby</name>
@@ -968,7 +1025,7 @@ git push origin :refs/tags/v0.1   --远程删除
             <title type="text">热键大师</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/read/%E7%83%AD%E9%94%AE%E5%A4%A7%E5%B8%88/" />
             <id>https://Kurby96.github.io/read/%E7%83%AD%E9%94%AE%E5%A4%A7%E5%B8%88/</id>
-            <updated>2020-10-23T20:03:32+08:00</updated>
+            <updated>2020-10-23T22:05:17+08:00</updated>
             <published>0001-01-01T00:00:00+00:00</published>
             <author>
                     <name>Kurby</name>
