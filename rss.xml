@@ -23,7 +23,7 @@
         
             <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
         
-        <lastBuildDate>Mon, 26 Oct 2020 12:55:01 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2020 12:58:37 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
         
@@ -110,6 +110,111 @@
             </item>
         
             <item>
+                <title>如何添加新文章到博客</title>
+                <link>https://Kurby96.github.io/tool/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E6%96%B0%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E6%96%B0%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2/</guid>
+                <pubDate>Mon, 26 Oct 2020 12:20:44 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<h3 id="hexo">搭建hexo&mdash;&ndash;比较慢</h3>
+<p>安装软件</p>
+<p>创建空文件，用git命令敲， hexo  init</p>
+<h3 id="heading">文件创建命令</h3>
+<p>hexo n &ldquo;文章名字“    创建文章</p>
+<p>hexo generate   重新生成文件</p>
+<p>hexo clean    清理</p>
+<p>hexo deploy  传到远端</p>
+<h3 id="github">上传github访问</h3>
+<p>建一个仓库，</p>
+<p>打开__config文件最下面添加仓库路径</p>
+<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201021130536789.png" alt="image-20201021130536789"></p>
+<p>hexo deploy传到远端  登录一下github账号密码就行了</p>
+<h3 id="heading1">更换主题</h3>
+<h3 id="hugo">Hugo&mdash;-比较快</h3>
+<h4 id="heading2">如何添加文章呢？</h4>
+<ol>
+<li>新建文章</li>
+</ol>
+<p>我的博客目录：
+url = &ldquo;/read/&rdquo;
+url = &ldquo;/tool/&rdquo;
+url = &ldquo;/life/&rdquo;
+url = &ldquo;/thought/&rdquo;
+url = &ldquo;/about/&rdquo;</p>
+<p>由于 Hugo 并不会提供默认的示例文章，所以如果你想在安装和配置完后立即体验 MemE 的话，还需新建一篇文章和一个关于页面，修改文章内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">~/blog $ hugo new <span class="s2">&#34;posts/hello-world.md&#34;</span>
+~/blog $ hugo new <span class="s2">&#34;about/_index.md&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>现在编译：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">~/blog $ hugo server -D
+</code></pre></td></tr></table>
+</div>
+</div><p>不到 100 ms 后，打开 http://localhost:1313/，恭喜你！你已经成功在本地搭建好博客了🎉🎉🍻！尽情享受 MemE 的简约和 Hugo 的飞速吧🚀！</p>
+<p>3.传到远端</p>
+<p>hugo  编译</p>
+<p>cd public
+git add .
+git commit-m &ldquo;版本信息&rdquo;
+git remote ~
+git push -u origin master</p>
+<p>如果没显示再到https://www.netlify.com/，查看</p>
+<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134310861.png" alt="image-20201024134310861"></p>
+<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134554171.png" alt="image-20201024134554171"></p>
+<p>添加自己的域名，http自动认证一下就行了，如果还有问题，看一下自动更新设置没，没有重新设置一下</p>
+<p>注意事项：
++++
+title = &ldquo;如何添加新文章到博客&rdquo;
+tags = [&ldquo;hugo&rdquo;]    			##标签
+date = 2020-10-26T12:20:44+08:00
+draft = false       		    ##false是隐藏文章，本地可以查看，外网访问是隐藏的，改成true就能显示了
+comments = true   		   ##评论系统，本地查看不了
++++</p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/hugo/">hugo</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
                 <title>Reuixiy的Hugo主题更改</title>
                 <link>https://Kurby96.github.io/read/theme-reuixiy/</link>
                 <guid isPermaLink="true">https://Kurby96.github.io/read/theme-reuixiy/</guid>
@@ -153,7 +258,7 @@
                                 
                                 
                                 
-                                    <category domain="https://Kurby96.github.io/tags/Hugo/">Hugo</category>
+                                    <category domain="https://Kurby96.github.io/tags/hugo/">hugo</category>
                                 
                             
                         
@@ -367,7 +472,7 @@ Are you sure you want to <span class="k">continue</span> connecting <span class=
                                 
                                 
                                 
-                                    <category domain="https://Kurby96.github.io/tags/Hugo/">Hugo</category>
+                                    <category domain="https://Kurby96.github.io/tags/hugo/">hugo</category>
                                 
                             
                         
