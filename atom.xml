@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kurby</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-10-26T12:58:37+08:00</updated>
+    <updated>2020-10-27T21:54:23+08:00</updated>
     <id>https://Kurby96.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Kurby96.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://Kurby96.github.io/atom.xml" />
@@ -103,10 +103,87 @@
         </entry>
     
         <entry>
+            <title type="text">用阿里云oss做图床</title>
+            <link rel="alternate" type="text/html" href="https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/" />
+            <id>https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/</id>
+            <updated>2020-10-27T21:53:23+08:00</updated>
+            <published>2020-10-27T12:20:44+08:00</published>
+            <author>
+                    <name>Kurby</name>
+                    <uri>https://Kurby96.github.io/</uri>
+                    <email>1298869960@qq.com</email>
+                    </author>
+            <rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</rights>
+    
+    <summary type="html"><![CDATA[背景 之前用过GitHub的图床，太不稳定了，动不动就失效，属实麻烦，今天在知乎看到一……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="heading">背景</h3>
+<p>之前用过GitHub的图床，太不稳定了，动不动就失效，属实麻烦，今天在知乎看到一篇文章，用阿里云oss做图床，索性一试。</p>
+<h3 id="oss">购买oss</h3>
+<p>我是在手机app上购买的，网站上大家搜一搜吧，网上很多教程的。我买的27三年的（因为域名也是三年的QAQ~）.</p>
+<h3 id="bucket">创建阿里云bucket</h3>
+<p>进入阿里云控制台， 进入对象存储的配置中，选择 bucket列表 -&gt; 创建Bucket ，名字随便填，配置调整如下：（读写权限 需要调整 公共读）</p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --></p>
+<h3 id="heading1">绑定域名</h3>
+<p>自己有域名的绑定一下域名，但是需要有备案的域名，我当时就因为没有备案，所以没用。如果自己有备案的域名，可以参考一下下面的文章，看看怎么处理的。</p>
+<h3 id="picgo">配置picgo</h3>
+<p>在oss中创建一个文件Pic/用作之后的Picgo的配置</p>
+<p><!-- raw HTML omitted --></p>
+<p>打开AccessKey管理，它提示你直接使用主账户会有安全威胁，所以为了安全考虑，咱们还是乖乖用RAM 子用户。</p>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted --></p>
+<p>建一个子用户（第一次创建好像需要创建RAM角色管理，创建用户组，我当时弄得时候也很懵瞎弄的，大家不会的去度娘），编程访问勾选上，完成后会显示AccessKey 的ID 和 Secret，自己复制一下，后面会用</p>
+<!-- raw HTML omitted -->
+<p>返回到用户列表 ，找到刚才创建的子用户，给他添加一个OSS的权限</p>
+<p><!-- raw HTML omitted --></p>
+<p>下面就可以配置Picgo了，关于下载等Picgo的使用请详见我的另一个<a href="https://www.kurby.top/tool/picgo-tool/">博文</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>设定Keyld：    填写AccessKey 的ID
+设定KeySecret：填写AccessKey 的Secret
+设定存储空间名： Bucket名字，就是前文让你随便填的那个名字
+确认存储区域：   填写上图中的oss-XXX即可
+指定存储路径：   第一步中的oss的Pic名字
+设定自定义域名： 在备案时有自己域名的填，没填的空着即可
+</code></pre><h3 id="heading2">完成</h3>
+<p>快去试试你的图床吧~</p>
+<h4 id="heading3">参考文献</h4>
+<p><a href="https://www.jianshu.com/p/6ffac2a05eec">如何使用阿里云OSS搭建图床</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/77380877?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=1084579349541474304&amp;utm_campaign=shareopn">我花 9 块钱搭了一个“私人图床”</a></p>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://Kurby96.github.io/tags/%E5%9B%BE%E5%BA%8A/" term="图床" label="图床" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">如何添加新文章到博客</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/tool/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E6%96%B0%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2/" />
             <id>https://Kurby96.github.io/tool/%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E6%96%B0%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2/</id>
-            <updated>2020-10-26T12:58:17+08:00</updated>
+            <updated>2020-10-26T13:00:18+08:00</updated>
             <published>2020-10-26T12:20:44+08:00</published>
             <author>
                     <name>Kurby</name>
@@ -176,15 +253,15 @@ git push -u origin master</p>
 <p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134310861.png" alt="image-20201024134310861"></p>
 <p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134554171.png" alt="image-20201024134554171"></p>
 <p>添加自己的域名，http自动认证一下就行了，如果还有问题，看一下自动更新设置没，没有重新设置一下</p>
-<p>注意事项：
-+++
-title = &ldquo;如何添加新文章到博客&rdquo;
-tags = [&ldquo;hugo&rdquo;]    			##标签
+<p>注意事项：</p>
+<pre><code>+++
+title = &quot;如何添加新文章到博客&quot;
+tags = [&quot;hugo&quot;]    			##标签
 date = 2020-10-26T12:20:44+08:00
 draft = false       		    ##false是隐藏文章，本地可以查看，外网访问是隐藏的，改成true就能显示了
 comments = true   		   ##评论系统，本地查看不了
-+++</p>
-]]></content>
++++
+</code></pre>]]></content>
             
             
             
@@ -510,8 +587,6 @@ Are you sure you want to <span class="k">continue</span> connecting <span class=
             
                 <content type="html"><![CDATA[<h4 id="picgo">picGo工具使用说明</h4>
 <p>先说一下背景吧，本人写makedown喜欢在本地写，使用的是typora，<a href="https://www.typora.io/">下载地址</a>,有时候截图直接粘贴到typora上了，typora用的是本地的路径，当传到csdn或者其他上面，图片的链接就不见了，很是捉鸡，所以上网上查查有没有解决方案。遇到了picGo，很是欣喜。这里说一下使用方法吧。</p>
-<p>教程链接： <a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A"><a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A</a></a></p>
-<p>教程看着蛮复杂的，我这里简化一下。</p>
 <h5 id="1">1、下载应用</h5>
 <p>应用下载地址： <a href="https://github.com/Molunerfinn/PicGo/releases"><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></a></p>
 <p>macOS用户请下载最新版本的<code>dmg</code>文件，windows用户请下载最新版本的<code>exe</code>文件，linux用户请下载<code>AppImage</code>文件 。</p>
