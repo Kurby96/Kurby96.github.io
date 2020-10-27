@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kurby</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-10-27T21:54:23+08:00</updated>
+    <updated>2020-10-27T22:18:56+08:00</updated>
     <id>https://Kurby96.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Kurby96.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://Kurby96.github.io/atom.xml" />
@@ -106,7 +106,7 @@
             <title type="text">用阿里云oss做图床</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/" />
             <id>https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/</id>
-            <updated>2020-10-27T21:53:23+08:00</updated>
+            <updated>2020-10-27T22:07:27+08:00</updated>
             <published>2020-10-27T12:20:44+08:00</published>
             <author>
                     <name>Kurby</name>
@@ -151,6 +151,8 @@
 <h4 id="heading3">参考文献</h4>
 <p><a href="https://www.jianshu.com/p/6ffac2a05eec">如何使用阿里云OSS搭建图床</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/77380877?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=1084579349541474304&amp;utm_campaign=shareopn">我花 9 块钱搭了一个“私人图床”</a></p>
+<!-- raw HTML omitted -->
+<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201027220726927.png" alt="image-20201027220726927"></p>
 ]]></content>
             
             
