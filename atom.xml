@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kurby</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-10-27T22:18:56+08:00</updated>
+    <updated>2020-10-27T23:02:57+08:00</updated>
     <id>https://Kurby96.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Kurby96.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://Kurby96.github.io/atom.xml" />
@@ -106,7 +106,7 @@
             <title type="text">用阿里云oss做图床</title>
             <link rel="alternate" type="text/html" href="https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/" />
             <id>https://Kurby96.github.io/tool/%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91oss%E5%81%9A%E5%9B%BE%E5%BA%8A/</id>
-            <updated>2020-10-27T22:07:27+08:00</updated>
+            <updated>2020-10-27T22:58:44+08:00</updated>
             <published>2020-10-27T12:20:44+08:00</published>
             <author>
                     <name>Kurby</name>
@@ -123,23 +123,23 @@
 <p>我是在手机app上购买的，网站上大家搜一搜吧，网上很多教程的。我买的27三年的（因为域名也是三年的QAQ~）.</p>
 <h3 id="bucket">创建阿里云bucket</h3>
 <p>进入阿里云控制台， 进入对象存储的配置中，选择 bucket列表 -&gt; 创建Bucket ，名字随便填，配置调整如下：（读写权限 需要调整 公共读）</p>
-<p><!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027210200.png" alt=""></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027210319.png" alt=""></p>
 <h3 id="heading1">绑定域名</h3>
 <p>自己有域名的绑定一下域名，但是需要有备案的域名，我当时就因为没有备案，所以没用。如果自己有备案的域名，可以参考一下下面的文章，看看怎么处理的。</p>
 <h3 id="picgo">配置picgo</h3>
 <p>在oss中创建一个文件Pic/用作之后的Picgo的配置</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027225236.png" alt=""></p>
 <p>打开AccessKey管理，它提示你直接使用主账户会有安全威胁，所以为了安全考虑，咱们还是乖乖用RAM 子用户。</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027210710.png" alt=""></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027210907.png" alt=""></p>
 <p>建一个子用户（第一次创建好像需要创建RAM角色管理，创建用户组，我当时弄得时候也很懵瞎弄的，大家不会的去度娘），编程访问勾选上，完成后会显示AccessKey 的ID 和 Secret，自己复制一下，后面会用</p>
-<!-- raw HTML omitted -->
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027211219.png" alt=""></p>
 <p>返回到用户列表 ，找到刚才创建的子用户，给他添加一个OSS的权限</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027211803.png" alt=""></p>
 <p>下面就可以配置Picgo了，关于下载等Picgo的使用请详见我的另一个<a href="https://www.kurby.top/tool/picgo-tool/">博文</a></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027213443.png" alt=""></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027212519.png" alt=""></p>
 <pre><code>设定Keyld：    填写AccessKey 的ID
 设定KeySecret：填写AccessKey 的Secret
 设定存储空间名： Bucket名字，就是前文让你随便填的那个名字
@@ -148,11 +148,12 @@
 设定自定义域名： 在备案时有自己域名的填，没填的空着即可
 </code></pre><h3 id="heading2">完成</h3>
 <p>快去试试你的图床吧~</p>
-<h4 id="heading3">参考文献</h4>
+<h4 id="heading3">出现的问题</h4>
+<p>我发现在本地可以测试可以看到图片，传到个人博客上不显示图片，找了半天，发现是typora支持html格式的，hugo的博客不支持html的，注意区别。</p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201027224938.png" alt=""></p>
+<h4 id="heading4">参考文献</h4>
 <p><a href="https://www.jianshu.com/p/6ffac2a05eec">如何使用阿里云OSS搭建图床</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/77380877?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=1084579349541474304&amp;utm_campaign=shareopn">我花 9 块钱搭了一个“私人图床”</a></p>
-<!-- raw HTML omitted -->
-<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201027220726927.png" alt="image-20201027220726927"></p>
 ]]></content>
             
             
