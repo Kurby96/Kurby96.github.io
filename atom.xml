@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Kurby</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-11-24T12:58:04+08:00</updated>
+    <updated>2020-11-24T13:02:09+08:00</updated>
     <id>https://Kurby96.github.io/</id>
     <link rel="alternate" type="text/html" href="https://Kurby96.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://Kurby96.github.io/atom.xml" />
@@ -336,7 +336,7 @@ git push -u origin master</p>
 title = &quot;如何添加新文章到博客&quot;
 tags = [&quot;hugo&quot;]    			##标签
 date = 2020-10-26T12:20:44+08:00
-draft = false       		    ##false是隐藏文章，本地可以查看，外网访问是隐藏的，改成true就能显示了
+draft = false       		    ##true是隐藏文章，本地可以查看，外网访问是隐藏的，改成false就能显示了
 comments = true   		   ##评论系统，本地查看不了
 slug = &quot;SSL证书失效&quot;        ##这个是网页显示的链接，如slug = &quot;SSL证书失效&quot;   https://www.kurby.top/tool/SSL证书失效
 +++
