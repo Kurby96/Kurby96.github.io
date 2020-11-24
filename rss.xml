@@ -23,7 +23,7 @@
         
             <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
         
-        <lastBuildDate>Tue, 24 Nov 2020 12:36:55 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2020 12:58:04 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
         
@@ -110,65 +110,9 @@
             </item>
         
             <item>
-                <title>DNS授权(阿里云)</title>
-                <link>https://Kurby96.github.io/tool/Tool/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/Tool/</guid>
-                <pubDate>Mon, 23 Nov 2020 20:12:17 +0800</pubDate>
-                
-                    <author>1298869960@qq.com (Kurby)</author>
-                
-                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
-                
-                    <description><![CDATA[<p>本页面内容全部参考<a href="https://ohttps.com">ohttps</a>,担心网页时效问题，故复制全部内容到本博客内，读者还望周知。</p>
-<h5 id="1">1、登录阿里云</h5>
-<p>阿里云登录地址：https://account.aliyun.com/login/login.htm</p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201623.png" alt=""></p>
-<h5 id="2">2、打开控制台</h5>
-<p>登录阿里云后，打开控制台，选择访问控制。控制台地址：https://homenew.console.aliyun.com/</p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201751.png" alt=""></p>
-<h5 id="3">3、打开访问控制</h5>
-<p>找到访问控制页面并打开。访问控制页面地址：https://ram.console.aliyun.com/overview</p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201842.png" alt=""></p>
-<h5 id="4ram">4、新建RAM用户</h5>
-<p>在访问控制页面点击[用户]菜单，新建用户。 <strong>注意新建用户时，必须勾选编程访问。</strong></p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201914.png" alt=""></p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201934.png" alt=""></p>
-<h5 id="5accesskey-idaccesskey-secret">5、保存AccessKey ID和AccessKey Secret</h5>
-<p>在用户新建完成后，<strong>及时保存AccessKey ID和AccessKey Secret。</strong></p>
-<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201956.png" alt=""></p>
-<p>参考网站：https://ohttps.com/docs/dns/aliyun</p>
-]]></description>
-                
-                
-                
-                    
-                    
-                    
-                        
-                        
-                        
-                    
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://Kurby96.github.io/tags/Tool/">Tool</category>
-                                
-                            
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>Ssl证书失效解决办法</title>
-                <link>https://Kurby96.github.io/tool/Tool/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/Tool/</guid>
+                <title>SSL证书失效解决办法</title>
+                <link>https://Kurby96.github.io/tool/SSL%E8%AF%81%E4%B9%A6%E5%A4%B1%E6%95%88/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/SSL%E8%AF%81%E4%B9%A6%E5%A4%B1%E6%95%88/</guid>
                 <pubDate>Mon, 23 Nov 2020 19:40:19 +0800</pubDate>
                 
                     <author>1298869960@qq.com (Kurby)</author>
@@ -188,7 +132,7 @@
 <p><strong>2、申请证书</strong></p>
 <p>输入自己的域名以*开头如 <a href="http://www.fuckalyssl.com">www.fuckalyssl.com</a>  输入: *.fuckalyssl.com</p>
 <p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123195458.png" alt=""></p>
-<p>配置DNS授权模式，AccessKey ID 及 AccessKey Secret 获取方式 <a href="https://ohttps.com/docs/dns/aliyun">查看这里</a>：  <a href="https://ohttps.com/docs/dns/aliyun">https://ohttps.com/docs/dns/aliyun</a></p>
+<p>配置DNS授权模式，AccessKey ID 及 AccessKey Secret 获取方式 <a href="https://www.kurby.top/tool/DNS-impower/">查看这里</a>：  <a href="https://www.kurby.top/tool/DNS-impower/">https://www.kurby.top/tool/DNS-impower/</a></p>
 <p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123200603.png" alt=""></p>
 <p><strong>3、部署到阿里云</strong></p>
 <p>把证书解析到阿里云服务器</p>
@@ -325,7 +269,7 @@
 <h3 id="github">上传github访问</h3>
 <p>建一个仓库，</p>
 <p>打开__config文件最下面添加仓库路径</p>
-<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201021130536789.png" alt="image-20201021130536789"></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201124123957.png" alt=""></p>
 <p>hexo deploy传到远端  登录一下github账号密码就行了</p>
 <h3 id="heading1">更换主题</h3>
 <h3 id="hugo">Hugo&mdash;-比较快</h3>
@@ -363,15 +307,21 @@ url = &ldquo;/about/&rdquo;</p>
 </div>
 </div><p>不到 100 ms 后，打开 http://localhost:1313/，恭喜你！你已经成功在本地搭建好博客了🎉🎉🍻！尽情享受 MemE 的简约和 Hugo 的飞速吧🚀！</p>
 <p>3.传到远端</p>
+<ol>
+<li>
 <p>hugo  编译</p>
+</li>
+<li>
 <p>cd public
 git add .
 git commit-m &ldquo;版本信息&rdquo;
 git remote ~
 git push -u origin master</p>
+</li>
+</ol>
 <p>如果没显示再到https://www.netlify.com/，查看</p>
-<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134310861.png" alt="image-20201024134310861"></p>
-<p><img src="C:%5CUsers%5CLGD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201024134554171.png" alt="image-20201024134554171"></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201124124107.png" alt=""></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201124124147.png" alt=""></p>
 <p>添加自己的域名，http自动认证一下就行了，如果还有问题，看一下自动更新设置没，没有重新设置一下</p>
 <p>注意事项：</p>
 <pre><code>+++
@@ -380,6 +330,7 @@ tags = [&quot;hugo&quot;]    			##标签
 date = 2020-10-26T12:20:44+08:00
 draft = false       		    ##false是隐藏文章，本地可以查看，外网访问是隐藏的，改成true就能显示了
 comments = true   		   ##评论系统，本地查看不了
+slug = &quot;SSL证书失效&quot;        ##这个是网页显示的链接，如slug = &quot;SSL证书失效&quot;   https://www.kurby.top/tool/SSL证书失效
 +++
 </code></pre>]]></description>
                 
@@ -463,8 +414,8 @@ comments = true   		   ##评论系统，本地查看不了
         
             <item>
                 <title>git 提交100M以上的文件,附github基本操作流程</title>
-                <link>https://Kurby96.github.io/tool/my-git/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/my-git/</guid>
+                <link>https://Kurby96.github.io/tool/git-%E6%8F%90%E4%BA%A4%E5%A4%A7%E6%96%87%E4%BB%B6/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/git-%E6%8F%90%E4%BA%A4%E5%A4%A7%E6%96%87%E4%BB%B6/</guid>
                 <pubDate>Sat, 30 Nov 2019 22:25:56 +0800</pubDate>
                 
                     <author>1298869960@qq.com (Kurby)</author>
@@ -608,8 +559,8 @@ Are you sure you want to <span class="k">continue</span> connecting <span class=
         
             <item>
                 <title>Hugo安装</title>
-                <link>https://Kurby96.github.io/tool/hugo/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/hugo/</guid>
+                <link>https://Kurby96.github.io/tool/Hugo%E5%AE%89%E8%A3%85/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/Hugo%E5%AE%89%E8%A3%85/</guid>
                 <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
                 
                     <author>1298869960@qq.com (Kurby)</author>
@@ -677,8 +628,8 @@ Are you sure you want to <span class="k">continue</span> connecting <span class=
         
             <item>
                 <title>picGo工具使用说明</title>
-                <link>https://Kurby96.github.io/tool/picgo-tool/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/picgo-tool/</guid>
+                <link>https://Kurby96.github.io/tool/picGo%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/picGo%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
                 <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
                 
                     <author>1298869960@qq.com (Kurby)</author>
@@ -747,8 +698,8 @@ Are you sure you want to <span class="k">continue</span> connecting <span class=
         
             <item>
                 <title>廖雪峰‘s Git</title>
-                <link>https://Kurby96.github.io/tool/git%E5%B7%A5%E5%85%B7/</link>
-                <guid isPermaLink="true">https://Kurby96.github.io/tool/git%E5%B7%A5%E5%85%B7/</guid>
+                <link>https://Kurby96.github.io/tool/%E5%BB%96%E9%9B%AA%E5%B3%B0s-Git/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/%E5%BB%96%E9%9B%AA%E5%B3%B0s-Git/</guid>
                 <pubDate>Tue, 26 Nov 2019 14:13:56 +0800</pubDate>
                 
                     <author>1298869960@qq.com (Kurby)</author>

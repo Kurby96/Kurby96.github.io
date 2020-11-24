@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta name="theme-color" content="#fff" />
+        <script>
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+            }
+        </script>
+
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta name="generator" content="Hugo 0.60.0" />
+
+    <title>picGo工具使用说明 | Kurby</title>
+
+    <link rel="stylesheet" href="/css/meme.min.83dae79e433bf0f3badcdc029f740506a6774e9478d80e8ea9e3103996cf7167.css" integrity="sha256-g9rnnkM78PO63NwCn3QFBqZ3TpR42A6OqeMQOZbPcWc=" data-instant-track /><style data-instant-track>.post p {text-align:justify;text-justify:distribute}</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Slab:600i|Open+Sans+Condensed:300|Open+Sans:600&display=swap" rel="stylesheet" />
+
+    <meta name="author" content="Kurby" />
+    
+    
+    <meta name="description" content="picGo工具使用说明 先说一下背景吧，本人写makedown喜欢在本地写，使用的是t……" />
+    <meta name="keywords" content="tools" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Kurby" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Kurby" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="https://Kurby96.github.io/tool/picGo%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" />
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2019-11-26T14:13:56+08:00",
+        "dateModified": "2020-10-27T23:32:14+08:00",
+        "url": "https://Kurby96.github.io/tool/picGo%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/",
+        "headline": "picGo工具使用说明",
+        "description": "picGo工具使用说明 先说一下背景吧，本人写makedown喜欢在本地写，使用的是t……",
+        "keywords": "tools",
+        "inLanguage" : "zh-CN",
+        "articleSection": "tool",
+        "wordCount":  901 ,
+        "image": ["https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161238.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161449.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162506.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162609.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162900.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120163040.png","https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120170621.png"],
+        "author": {
+            "@type": "Person",
+            "description": "Think And Love",
+            "email": "1298869960@qq.com",
+            "image": "https://Kurby96.github.io/icons/apple-touch-icon.png",
+            "url": "https://Kurby96.github.io/",
+            "name": "Kurby"
+        },
+        "license": "在保留本文作者及本文链接的前提下，非商业用途随意转载分享。",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kurby",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://Kurby96.github.io/icons/apple-touch-icon.png"
+            },
+            "url": "https://Kurby96.github.io/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://Kurby96.github.io/"
+        }
+    }
+</script>
+
+    
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+
+
+<meta name="twitter:site" content="@Kurby" />
+<meta name="twitter:creator" content="@Kurby" />
+
+    
+
+
+
+
+
+
+<meta property="og:title" content="picGo工具使用说明" />
+<meta property="og:description" content="picGo工具使用说明 先说一下背景吧，本人写makedown喜欢在本地写，使用的是t……" />
+<meta property="og:url" content="https://Kurby96.github.io/tool/picGo%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" />
+<meta property="og:site_name" content="Kurby" />
+<meta property="og:locale" content="zh-CN" /><meta property="og:image" content="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161238.png" />
+<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2019-11-26T14:13:56+08:00" />
+    <meta property="article:modified_time" content="2020-10-27T23:32:14+08:00" />
+    
+    <meta property="article:section" content="tool" />
+    <meta property="article:tag" content="tools" />
+
+        
+
+
+
+
+    
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-153531768-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        <div class="site-brand">
+            
+            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="250" height="100"><text transform="translate(21 74)"><tspan x="0" y="0" style="white-space:pre" font-size="78" fill="#fff" font-family="Source Han Sans SC Regular" font-weight="400">Kurby</tspan></text></svg></a>
+            
+        </div>
+    </header>
+
+            
+            
+            
+    
+        
+            
+        
+        
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+    
+
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+        <article class="content post">
+
+            <h1 class="post-title">picGo工具使用说明</h1>
+
+            
+
+            
+                
+            
+
+            
+                <div class="post-meta">
+    
+        
+        <time datetime="2019-11-26T14:13:56+08:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>2019.11.26</time>
+    
+    
+        
+        <time datetime="2020-10-27T23:32:14+08:00" class="post-meta-item modified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>2020.10.27</time>
+    
+    
+    
+        
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+            
+            
+            
+        
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>901</span>
+    
+    
+        
+        <span class="post-meta-item readingtime"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>2&nbsp;分钟</span>
+    
+</div>
+            
+
+            <div class="post-body"><h4 id="picgo"><a href="#picgo" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>picGo工具使用说明</h4>
+<p style="text-indent:0"><span class="drop-cap">先</span>说一下背景吧，本人写makedown喜欢在本地写，使用的是typora，<a href="https://www.typora.io/">下载地址</a>,有时候截图直接粘贴到typora上了，typora用的是本地的路径，当传到csdn或者其他上面，图片的链接就不见了，很是捉鸡，所以上网上查查有没有解决方案。遇到了picGo，很是欣喜。这里说一下使用方法吧。</p>
+<h5 id="1"><a href="#1" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>1、下载应用</h5>
+<p>应用下载地址： <a href="https://github.com/Molunerfinn/PicGo/releases"><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></a></p>
+<p>macOS用户请下载最新版本的<code>dmg</code>文件，windows用户请下载最新版本的<code>exe</code>文件，linux用户请下载<code>AppImage</code>文件 。</p>
+<p>下好之后，直接安装就行。</p>
+<h5 id="2"><a href="#2" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>2、配置环境变量</h5>
+<p>前提: 先安装node.js，版本要大于8,然后配置环境。</p>
+<p>先找到环境变量，不知道在哪的百度搜windows环境变量怎么找，点击环境变量，点击Path，点击编辑。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161238.png" alt=""></p>
+<p>然后新建，把 %APPDATA%\picgo\data.json 粘贴到上面。重启使环境变量生效。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120161449.png" alt=""></p>
+<h5 id="3"><a href="#3" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>3、一些基本操作</h5>
+<p>这些操作就看上面的文档，包括上传啊，相册啊，什么的。</p>
+<h5 id="4--github"><a href="#4--github" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>4、图床设置  (github方式)</h5>
+<p>1、一个仓库，记录一下仓库地址。</p>
+<p>2、 生成一个token用于PicGo操作你的仓库：</p>
+<p>访问：https://github.com/settings/tokens</p>
+<p>然后点击<code>Generate new token</code>。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162506.png" alt=""></p>
+<p>把repo的勾打上即可。然后翻到页面最底部，点击<code>Generate token</code>的绿色按钮生成token。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162609.png" alt=""></p>
+<p>**注意：**这个token生成后只会显示一次！你要把这个token复制一下存到其他地方以备以后要用。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120162900.png" alt=""></p>
+<p>3、 配置PicGo</p>
+<p>**注意：**仓库名的格式是<code>用户名/仓库</code>，比如我创建了一个叫做<code>test</code>的仓库，在PicGo里我要设定的仓库名就是<code>Molunerfinn/test</code>。一般我们选择<code>master</code>分支即可。然后记得点击确定以生效，然后可以点击<code>设为默认图床</code>来确保上传的图床是GitHub。</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120163040.png" alt=""></p>
+<p>设定自定义域名，这个是你上传图片到Github上，picGo会给你一个链接，已经复制到剪切板上了，这个就是配置剪切板上路径的。</p>
+<p>这个路径的前缀你可以打开github上的图片，右键-  <code>在新标签页中打开图片(i)</code>,查看前面的路径</p>
+<p><img src="https://raw.githubusercontent.com/BUG-96/PicStore/master//img20191120170621.png" alt=""></p>
+<p>得到的路径就是： <a href="https://raw.githubusercontent.com/BUG-96/PicStore/master">https://raw.githubusercontent.com/BUG-96/PicStore/master</a> 把这个填到设置自定义域名中即可。</p>
+<h5 id="5"><a href="#5" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>5、下面就是一些自己的配置，参考文档就行了。</h5>
+</div>
+
+        </article>
+
+        
+
+        
+
+        
+
+        
+    
+
+
+        
+    
+    
+        <div class="related-posts">
+            <h2 class="related-title">相关文章：<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
+            <ul class="related-list">
+                
+                    <li class="related-item">
+                        <a href="/tool/%E5%BB%96%E9%9B%AA%E5%B3%B0s-Git/" class="related-link">廖雪峰‘s Git</a>
+                    </li>
+                
+            </ul>
+        </div>
+    
+
+
+        
+    
+        <div class="post-tags">
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/tools/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>tools</a>
+                
+            
+        </div>
+    
+
+
+        
+
+        
+
+        
+
+        
+    
+
+        <div class="load-comments">
+            <div id="load-comments" onclick="loadComments()">加载评论</div>
+        </div>
+
+        
+
+        
+            <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+            <div id="vcomments"></div>
+        
+
+    
+
+
+    </div>
+</main>
+
+            
+    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            
+                
+            
+            
+
+            
+                
+            
+            
+
+            
+                
+            
+            
+
+            <div class="site-info">©&nbsp;2019–2020<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>Kurby</div>
+
+            
+
+            
+
+            
+                <div class="custom-footer">你知道今天的天空是什么颜色的吗？</div>
+            
+
+            
+        </div>
+    </footer>
+
+        </div>
+        <script src="/js/meme.min.be273f7eb89932146bc893fce7038195a4860d8c6b61bab732423bf2dcf29375.js" integrity="sha256-vic/friZMhRryJP85wOBlaSGDYxrYbq3MkI78tzyk3U=" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
+
+
+    <script data-no-instant>
+        InstantClick.on('change', function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1c1c21');
+                document.getElementById("theme-toggle").innerHTML = "🌙";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
+                }
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+                document.getElementById("theme-toggle").innerHTML = "🌞";
+
+                var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
+                for (var i = 0; i < els.length; i++) {
+                    els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
+                }
+            }
+        });
+    </script>
+<script data-no-instant>
+            InstantClick.on('change', function () {
+                ga('send', 'pageview', location.pathname + location.search);
+            });
+        </script>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous" />
+<script>
+    if (typeof renderMathInElement === 'undefined') {
+        var getScript = (options) => {
+            var script = document.createElement('script');
+            script.defer = true;
+            script.crossOrigin = 'anonymous';
+            script['data-no-instant'] = true;
+            Object.keys(options).forEach((key) => {
+                script[key] = options[key];
+            });
+            document.body.appendChild(script);
+        };
+        getScript({
+            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js',
+            integrity: 'sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1',
+            onload: () => {
+                getScript({
+                    src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/mhchem.min.js',
+                    integrity: 'sha384-oa0lfxCGjaU1LdYckhq8LZcP+JTf8cyJXe69O6VE6UrShzWveT6KiCElJrck/stm',
+                    onload: () => {
+                        getScript({
+                            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js',
+                            integrity: 'sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI',
+                            onload: () => {
+                                renderMathInElement(
+                                    document.body,
+                                    {
+                                        delimiters: [
+                                            {left: "$$", right: "$$", display: true},
+                                            {left: "\\[", right: "\\]", display: true},
+                                            {left: "$", right: "$", display: false},
+                                            {left: "\\(", right: "\\)", display: false}
+                                        ]
+                                    }
+                                );
+                            },
+                        });
+                    },
+                });
+            },
+        });
+    } else {
+        renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+</script>
+
+
+
+    
+
+        
+
+        
+            <script>
+    function loadComments() {
+        document.querySelector('#load-comments').style = "display:none";
+        new Valine({
+            el: '#vcomments',
+            appId: 'Vra4Bndc3XN8nBG8mEmWuJ30-9Nh9j0Va',
+            appKey: 'l5RN0mUEyRj5SNpEImzhPJKl',
+            placeholder: '快来吐槽我吧！若有问题留下你的邮箱',
+            notify:  false ,
+            verify:  false ,
+            path: location.pathname,
+            avatar: 'mm',
+            meta: ["nick"],
+            pageSize:  10 ,
+            lang: 'zh-cn',
+            visitor:  false ,
+            highlight:  true ,
+            avatarForce:  false ,
+            recordIP:  false ,
+            serverURLs: ''
+        });
+    }
+</script>
+        
+
+    
+
+
+
+
+
+    </body>
+</html>
