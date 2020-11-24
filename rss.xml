@@ -23,7 +23,7 @@
         
             <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
         
-        <lastBuildDate>Tue, 24 Nov 2020 13:02:09 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2020 13:08:21 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
         
@@ -104,6 +104,62 @@
                 
                 
                     
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>DNS授权(阿里云)</title>
+                <link>https://Kurby96.github.io/tool/DNS-impower/</link>
+                <guid isPermaLink="true">https://Kurby96.github.io/tool/DNS-impower/</guid>
+                <pubDate>Mon, 23 Nov 2020 20:12:17 +0800</pubDate>
+                
+                    <author>1298869960@qq.com (Kurby)</author>
+                
+                <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
+                
+                    <description><![CDATA[<p>本页面内容全部参考<a href="https://ohttps.com">ohttps</a>,担心网页时效问题，故复制全部内容到本博客内，读者还望周知。</p>
+<h5 id="1">1、登录阿里云</h5>
+<p>阿里云登录地址：https://account.aliyun.com/login/login.htm</p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201623.png" alt=""></p>
+<h5 id="2">2、打开控制台</h5>
+<p>登录阿里云后，打开控制台，选择访问控制。控制台地址：https://homenew.console.aliyun.com/</p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201751.png" alt=""></p>
+<h5 id="3">3、打开访问控制</h5>
+<p>找到访问控制页面并打开。访问控制页面地址：https://ram.console.aliyun.com/overview</p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201842.png" alt=""></p>
+<h5 id="4ram">4、新建RAM用户</h5>
+<p>在访问控制页面点击[用户]菜单，新建用户。 <strong>注意新建用户时，必须勾选编程访问。</strong></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201914.png" alt=""></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201934.png" alt=""></p>
+<h5 id="5accesskey-idaccesskey-secret">5、保存AccessKey ID和AccessKey Secret</h5>
+<p>在用户新建完成后，<strong>及时保存AccessKey ID和AccessKey Secret。</strong></p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201123201956.png" alt=""></p>
+<p>参考网站：https://ohttps.com/docs/dns/aliyun</p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://Kurby96.github.io/tags/Tool/">Tool</category>
+                                
+                            
                         
                     
                 
