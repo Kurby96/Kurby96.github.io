@@ -23,7 +23,7 @@
         
             <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
         
-        <lastBuildDate>Thu, 15 Jul 2021 19:03:50 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jul 2021 19:33:39 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
         
@@ -592,13 +592,22 @@ url = &ldquo;/about/&rdquo;</p>
 <p>git add .</p>
 <p>git commit-m &ldquo;版本信息&rdquo;</p>
 <p>git remote ~</p>
-<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:Kurby96.github.io.git</p>
+<p>git remote add origin <a href="https://github.com/Kurby96/Kurby96.github.io.git">https://github.com/Kurby96/Kurby96.github.io.git</a></p>
 <p>git push -u origin master</p>
 <p>有时候还需要输入账号密码</p>
 <p>git config &ndash;global user.email &ldquo;<a href="mailto:2256925632@qq.com">2256925632@qq.com</a>&rdquo;</p>
 <p>git config &ndash;global user.name &ldquo;kurby96&rdquo;</p>
 </li>
 </ol>
+<pre><code>若提示，$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+</code></pre><p>输入，ssh-keygen -t rsa -C &ldquo;<a href="mailto:2256925632@qq.com">2256925632@qq.com</a>&quot;到C:\Users\12988.ssh\id_rsa.pub文件复制到下图中</p>
+<p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20210715191746.png" alt=""></p>
 <p>如果没显示再到https://www.netlify.com/，查看</p>
 <p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201124124107.png" alt=""></p>
 <p><img src="https://kurby.oss-cn-beijing.aliyuncs.com/Pic/20201124124147.png" alt=""></p>
