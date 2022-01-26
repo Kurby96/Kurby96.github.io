@@ -23,7 +23,7 @@
         
             <copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享。</copyright>
         
-        <lastBuildDate>Thu, 15 Jul 2021 19:33:39 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jan 2022 21:53:20 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://Kurby96.github.io/rss.xml" />
         
@@ -591,7 +591,6 @@ url = &ldquo;/about/&rdquo;</p>
 <p>cd public</p>
 <p>git add .</p>
 <p>git commit-m &ldquo;版本信息&rdquo;</p>
-<p>git remote ~</p>
 <p>git remote add origin <a href="https://github.com/Kurby96/Kurby96.github.io.git">https://github.com/Kurby96/Kurby96.github.io.git</a></p>
 <p>git push -u origin master</p>
 <p>有时候还需要输入账号密码</p>
@@ -599,6 +598,7 @@ url = &ldquo;/about/&rdquo;</p>
 <p>git config &ndash;global user.name &ldquo;kurby96&rdquo;</p>
 </li>
 </ol>
+<p>如果提示error: remote origin already exists.用git remote rm origin</p>
 <pre><code>若提示，$ git push -u origin master
 git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.
